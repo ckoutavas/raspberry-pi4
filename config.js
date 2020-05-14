@@ -208,11 +208,10 @@ defaultProfile: "default",
 				afterRecordLimit:0
 			},
             
- // hide all modules NOT MMM-hotword
+ // hide all modules on hotword
 "goodbye_mirror": {
     moduleExec: {
-      module: ["alert", "updatenotification", "clock", "calendar", "currentweather", 
- 	  	"weatherforecast", "newsfeed", "MMM-AVStock"],
+      module: [],
       exec: (module, hotword, file) => {
         module.hide()
       }
@@ -221,7 +220,7 @@ defaultProfile: "default",
 				afterRecordLimit:0
   },
             
- // show all modules again     
+ // show all modules on hotword    
 "hello_mirror": {
     moduleExec: {
       module: [],
